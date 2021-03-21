@@ -28,7 +28,10 @@ def read(fname):
     return content
 
 
-core_dependencies = []
+core_dependencies = [
+    'tendril-entity-base',
+    'tendril-validation-common',
+]
 
 install_requires = core_dependencies + ['wheel']
 
