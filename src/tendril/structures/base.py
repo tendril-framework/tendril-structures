@@ -21,8 +21,9 @@ class StructureBase(ValidatableBase):
         raise NotImplementedError
 
     def structured_contents(self):
-        # TODO Generate and return PSL-like Object
-        raise NotImplementedError
+        return {
+            self.contents()
+        }
 
     def define(self):
         self._defined = True

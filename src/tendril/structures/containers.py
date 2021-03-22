@@ -13,6 +13,9 @@ class BasicContainer(StructureBase):
     def contents(self):
         return self._contents
 
+    def json(self):
+        return [entity.json() for entity in self.contents()]
+
 
 class GroupsAwareContainerMixin(object):
     def __init__(self):
